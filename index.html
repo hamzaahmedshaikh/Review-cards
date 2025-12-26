@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real Madrid Player Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Real Madrid Player Reviews</h1>
+      <p class="subtitle">Swipe or use arrows to browse players and their stats.</p>
+    </header>
+
+    <section class="carousel" aria-roledescription="carousel" aria-label="Real Madrid players">
+      <div class="viewport" id="viewport" role="group" aria-live="polite"></div>
+
+      <div class="controls">
+        <button class="btn" id="prevBtn" aria-label="Previous player" title="Previous">‹</button>
+        <div class="progress" aria-label="Player index">
+          <span id="indexLabel">1</span> / <span id="totalLabel">1</span>
+        </div>
+        <button class="btn" id="nextBtn" aria-label="Next player" title="Next">›</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Tip: Press ← or → to navigate. Hold Shift for faster jumps.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
